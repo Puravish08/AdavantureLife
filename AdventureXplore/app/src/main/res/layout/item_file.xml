@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fullcard"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/appColor"
+        app:cardCornerRadius="@dimen/_14sdp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/viewpager_img3" />
+
+        <TextView
+            android:id="@+id/palce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_19sdp"
+            android:text="National Museum"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_3sdp">
+
+            <TextView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="💲 "
+                />
+
+            <TextView
+                android:id="@+id/txtlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:text="location"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/star" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/txtRating"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:text="5.5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/_14sdp"
+            android:id="@+id/imgLike"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/heart"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

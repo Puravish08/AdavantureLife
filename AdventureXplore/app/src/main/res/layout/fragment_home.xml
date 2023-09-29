@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HomeFragment">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/AppDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/dark"
+                        android:layout_marginEnd="@dimen/_10sdp">
+
+                        <androidx.appcompat.widget.SearchView
+                            android:id="@+id/searchhome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/round_bg"
+                            android:backgroundTint="@color/white"
+                            android:elevation="5dp"
+                            app:iconifiedByDefault="false"
+                            app:queryHint="Search Here" />
+
+                    </androidx.appcompat.widget.Toolbar>
+                </LinearLayout>
+
+                <!--                <androidx.cardview.widget.CardView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="@dimen/_200sdp"-->
+                <!--                    android:layout_marginHorizontal="@dimen/_10sdp"-->
+                <!--                    android:layout_marginTop="@dimen/_10sdp"-->
+                <!--                    android:layout_marginBottom="@dimen/_10sdp"-->
+                <!--                    app:cardBackgroundColor="@color/appColor"-->
+                <!--                    app:cardCornerRadius="@dimen/_12sdp">-->
+
+                <!--                    <androidx.viewpager.widget.ViewPager-->
+                <!--                        android:id="@+id/viewpager"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="@dimen/_200sdp" />-->
+
+                <!--                </androidx.cardview.widget.CardView>-->
+
+
+                <!--                <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator-->
+                <!--                    android:id="@+id/worm_dots_indicator"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center_horizontal"-->
+                <!--                    app:dotsColor="@color/dark"-->
+                <!--                    app:dotsCornerRadius="8dp"-->
+                <!--                    app:dotsSize="10dp"-->
+                <!--                    app:dotsSpacing="4dp"-->
+                <!--                    app:dotsStrokeColor="@color/appColor"-->
+                <!--                    app:dotsStrokeWidth="2dp" />-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <!--            <TextView-->
+                    <!--                android:layout_marginStart="@dimen/_10sdp"-->
+                    <!--                android:textSize="@dimen/_15ssp"-->
+                    <!--                android:textStyle="bold"-->
+                    <!--                android:textColor="@color/black"-->
+                    <!--                android:text="Top Holiday Destination "-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"/>-->
+
+
+                    <!--            <androidx.recyclerview.widget.RecyclerView-->
+                    <!--                android:layout_marginTop="@dimen/_10sdp"-->
+                    <!--                android:id="@+id/rcvTopDestination"-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"/>-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="Categories"
+                        android:textSize="@dimen/_16ssp"
+                        android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:scrollbars="none"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_70sdp"
+                                android:id="@+id/imgMountain"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:src="@drawable/mountainlogo" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_8sdp"
+                                    android:text="Mountain"/>
+
+                            </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/imgforast"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:src="@drawable/junglelogo" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_15sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:text="Forest"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imghmalay"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:src="@drawable/himalay" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_15sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:text="Himalay"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/imgsea"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:src="@drawable/sea" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_15sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:text="Sea"/>
+                        </LinearLayout>
+
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="Most Visited"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</FrameLayout>
